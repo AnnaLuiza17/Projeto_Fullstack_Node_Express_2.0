@@ -17,6 +17,12 @@ Este projeto é uma aplicação web completa com **API CRUD** para gerenciamento
 
 ---
 
+## 📷 Demonstração 
+<img width="1799" height="779" alt="Captura de tela 2026-05-06 104343" src="https://github.com/user-attachments/assets/58bdee1c-80bd-42eb-bf75-ba9696768dd3" />
+
+
+---
+
 ## 📌 Funcionalidades
 
 - 📋 Listagem de médicos e pacientes

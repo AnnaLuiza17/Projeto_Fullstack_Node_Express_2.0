@@ -1,0 +1,179 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Fundo (mesma paleta anterior) */
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container */
+#container {
+    display: flex;
+    gap: 25px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Cards */
+#usuario, 
+#usuario-cadastro {
+    flex: 1;
+    background: #f8fbff;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Títulos */
+h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #1e293b;
+}
+
+/* Lista */
+#lista-usuario {
+    list-style: none;
+    max-height: 350px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+/* Item */
+#lista-usuario li {
+    background: #ffffff;
+    border-left: 4px solid #4facfe;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #334155;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: 0.25s;
+}
+
+#lista-usuario li:hover {
+    background: #f0f9ff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+/* Botão editar */
+#lista-usuario button {
+    align-self: flex-start;
+    padding: 6px 12px;
+    background: #00c6ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#lista-usuario button:hover {
+    background: #0096c7;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #dbeafe;
+    margin-bottom: 10px;
+    transition: 0.2s;
+    font-size: 14px;
+    background: #f8fbff;
+}
+
+input:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 6px rgba(79,172,254,0.4);
+    outline: none;
+}
+
+/* Botão principal */
+#cadastrar {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #4facfe, #00c6ff);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#cadastrar:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 20px rgba(0,198,255,0.3);
+}
+
+/* Scroll */
+#lista-usuario::-webkit-scrollbar {
+    width: 6px;
+}
+
+#lista-usuario::-webkit-scrollbar-thumb {
+    background: #4facfe;
+    border-radius: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+    }
+}
+
+/* Botão atualizar */
+#atualizar {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+/* Hover */
+#atualizar:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 20px rgba(79,172,254,0.35);
+}
+
+/* Clique */
+#atualizar:active {
+    transform: scale(0.98);
+}
+
+/* Estado edição (opcional - fica mais escuro quando estiver editando) */
+.editando #atualizar {
+    background: linear-gradient(135deg, #0096c7, #0077b6);
+}

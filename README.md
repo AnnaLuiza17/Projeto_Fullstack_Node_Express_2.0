@@ -77,3 +77,4 @@ Este projeto foi desenvolvido com o objetivo de:
 1. Clone o repositório:
 ```bash
 git clone [https://github.com/AnnaLuiza17/Projeto_Fullstack_Node_Express_2.0]
+          (https://github.com/AnnaLuiza17/Projeto_Fullstack_Node_Express_2.0.git)

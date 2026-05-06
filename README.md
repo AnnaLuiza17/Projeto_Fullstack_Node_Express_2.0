@@ -154,5 +154,4 @@
 
 # ```bash
 
-# git clone https://github.com/seu-usuario/seu-repositorio.git
-
+# git clone [https://github.com/AnnaLuiza17/Projeto_Fullstack_Node_Express_2.0.git]
